@@ -1,0 +1,13 @@
+import random
+
+faces = {
+    1: "⚀",
+    2: "⚁",
+    3: "⚂",
+    4: "⚃",
+    5: "⚄",
+    6: "⚅"
+}
+
+roll = random.randint(1, 6)
+print("You rolled:", faces[roll], roll)
