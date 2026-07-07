@@ -1,0 +1,14 @@
+import turtle
+
+pen = turtle.Turtle()
+pen.speed(0)
+pen.width(2)
+
+colors = ["cyan", "magenta", "yellow", "white", "lime"]
+
+for i in range(200):
+    pen.pencolor(colors[i % 5])
+    pen.forward(i)
+    pen.right(91)
+
+turtle.done()
