@@ -1,0 +1,32 @@
+import turtle
+
+t = turtle.Turtle()
+t.speed(0)
+t.hideturtle()
+
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.color("yellow")
+t.begin_fill()
+t.circle(100)
+t.end_fill()
+
+t.penup()
+t.goto(-35, 30)
+t.pendown()
+t.dot(20)
+
+t.penup()
+t.goto(35, 30)
+t.pendown()
+t.dot(20)
+
+t.penup()
+t.goto(-40, -10)
+t.setheading(-60)
+t.pendown()
+t.width(5)
+t.circle(50, 120)
+
+turtle.done()
