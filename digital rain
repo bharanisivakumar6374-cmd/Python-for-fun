@@ -1,0 +1,25 @@
+import random
+import os
+import time
+
+chars = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%&*"
+width = 80
+drops = [0] * width
+
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
+
+while True:
+    screen = [[" " for _ in range(width)] for _ in range(25)]
+
+    for i in range(width):
+        if random.random() > 0.9:
+            drops[i] = 0
+        if drops[i] < 25:
+            screen[drops[i]][i] = random.choice(chars)
+            drops[i] += 1
+
+    clear()
+    for row in screen:
+        print("".join(row))
+    time.sleep(0.08)
