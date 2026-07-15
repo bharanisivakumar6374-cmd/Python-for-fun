@@ -1,0 +1,9 @@
+import random
+
+jokes = [
+    "Why do programmers prefer dark mode? Because light attracts bugs!",
+    "Python ate Java because it was hungry.",
+    "Debugging is like being a detective."
+]
+
+print(random.choice(jokes))
