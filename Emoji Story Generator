@@ -1,0 +1,12 @@
+import random
+
+people = ["👨", "👩", "🧑"]
+places = ["🏖️", "🏰", "🌋"]
+actions = ["🏃", "🎤", "🚴"]
+
+print(
+    random.choice(people),
+    random.choice(actions),
+    "at",
+    random.choice(places)
+)
