@@ -1,0 +1,29 @@
+import os
+import time
+import random
+
+os.system("cls" if os.name == "nt" else "clear")
+
+print("Initializing...")
+time.sleep(1)
+
+for i in range(0, 101, 10):
+    print(f"Loading modules... {i}%")
+    time.sleep(0.3)
+
+print("\nConnecting to secure server...\n")
+time.sleep(1)
+
+chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+for _ in range(25):
+    print("".join(random.choice(chars) for _ in range(60)))
+    time.sleep(0.1)
+
+print("\nAccess Granted!")
+time.sleep(1)
+print("Downloading secret files...")
+time.sleep(2)
+
+print("\n😂 PRANK! This is only a Python animation.")
+print("No real hacking was performed.")
